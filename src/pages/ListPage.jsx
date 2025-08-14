@@ -9,7 +9,7 @@ import { usePokemonList } from '../hooks/usePokemon'
 
 export default function ListPage() {
   const location = useLocation()
-  const limit = 5
+  const limit = 20
 
   const [view, setView] = useState(() => {
     return location.state?.view || localStorage.getItem('pokemonView') || 'list'
